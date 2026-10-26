@@ -9,6 +9,8 @@ Mapa por estado e município, comparação com o 1º turno, voto no exterior e f
 
 <br />
 
+[![Abrir o app](https://img.shields.io/badge/abrir_o_app-votometrobr.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://votometrobr.vercel.app)
+
 ![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232a?style=flat-square&logo=react&logoColor=61dafb)
 ![TypeScript](https://img.shields.io/badge/TypeScript_5.9-3178c6?style=flat-square&logo=typescript&logoColor=white)
@@ -119,7 +121,9 @@ cada resposta em `.cache/tse`. Apague essa pasta (`rm -rf .cache`) para forçar 
 
 | Variável | Para que serve | Se não definir |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | URL pública do site. Alimenta o canonical, o Open Graph, o `robots.txt` e o `sitemap.xml`. | As URLs saem com `http://localhost:3000`. |
+| `NEXT_PUBLIC_SITE_URL` | URL pública do site. Alimenta o canonical, o Open Graph, o `robots.txt` e o `sitemap.xml`. | Usa `https://votometrobr.vercel.app`. |
+
+Só precisa definir se publicar em outro domínio:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://seu-dominio.com.br npm run build
@@ -156,9 +160,9 @@ docs/               banner e capturas de tela deste README
 O site é exportado como HTML estático (`output: "export"` em `next.config.mjs`), então funciona em Vercel,
 Netlify, GitHub Pages ou qualquer hospedagem de arquivos. Publique a pasta `out/`.
 
-- Defina `NEXT_PUBLIC_SITE_URL` no build. Sem ela, Open Graph, canonical e sitemap apontam para `localhost`.
-- A imagem de compartilhamento sai como `out/opengraph-image`, sem extensão. Confirme no primeiro deploy
-  que a hospedagem a serve como `image/png`.
+- O site está no ar em [votometrobr.vercel.app](https://votometrobr.vercel.app). Esse é o endereço padrão do Open Graph, do canonical e do sitemap; em outro domínio, defina `NEXT_PUBLIC_SITE_URL` no build.
+- A imagem de compartilhamento (`opengraph-image`), o `twitter-image` e o `apple-icon` saem sem extensão. O `vercel.json` força
+  `Content-Type: image/png` neles; em outra hospedagem, faça o equivalente.
 - Se os dados mudarem, rode o build de novo: a imagem de compartilhamento usa os números do momento.
 
 ## 🧭 Próximos passos
@@ -166,7 +170,7 @@ Netlify, GitHub Pages ou qualquer hospedagem de arquivos. Publique a pasta `out/
 - [ ] Publicar o painel “Após as 17h” com números assim que o TSE liberar os Boletins de Urna do 2º turno.
 - [ ] Adicionar testes automatizados (hoje a garantia é a validação dos totais no build).
 - [ ] Medir o desempenho do mapa em celulares reais (os testes foram feitos em navegador headless).
-- [ ] Definir a URL pública e o domínio, e conferir o preview de compartilhamento.
+- [ ] Conferir o preview de compartilhamento no site publicado (WhatsApp, X, LinkedIn).
 - [ ] Atualizar os dados sozinho com um agendamento, em vez de rodar `build-data` à mão.
 
 ## Créditos

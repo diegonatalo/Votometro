@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-lula: var(--lula);
+  --color-flavio: var(--flavio);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-data);
+}
+
+:root {
+  color-scheme: light;
+  --bg: #f1efe8;
+  --surface: #fbfaf6;
+  --surface-2: #e8e5db;
+  --ink: #14171a;
+  --ink-2: #3d4247;
+  --ink-3: #5a6065;
+  --line: #d9d6cb;
+  --accent: #1d6a3a;
+  --focus: #1d6a3a;
+  --lula: #a8231b;
+  --flavio: #1b4c99;
+  --shadow: 0 1px 0 rgb(20 23 26 / 0.04), 0 12px 32px -16px rgb(20 23 26 / 0.28);
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #0a0d13;
+  --surface: #121721;
+  --surface-2: #1b2230;
+  --ink: #eef1f6;
+  --ink-2: #b0b9c8;
+  --ink-3: #8c97a9;
+  --line: #263042;
+  --accent: #6ee7a8;
+  --focus: #6ee7a8;
+  --lula: #ff8576;
+  --flavio: #7fb0ff;
+  --shadow: 0 1px 0 rgb(255 255 255 / 0.03), 0 10px 28px -14px rgb(0 0 0 / 0.8);
+}
+
+.led {
+  border-radius: 9999px;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+  animation: led 2.4s ease-in-out infinite;
+}
+@keyframes led {
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 5%, transparent);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  background:
+    radial-gradient(60rem 28rem at 12% -8%, color-mix(in srgb, var(--lula) 9%, transparent), transparent 70%),
+    radial-gradient(60rem 28rem at 92% -8%, color-mix(in srgb, var(--flavio) 9%, transparent), transparent 70%),
+    var(--bg);
+  background-repeat: no-repeat;
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.font-data {
+  font-family: var(--font-data), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.5rem 0.75rem;
+}
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.section-eyebrow {
+  font-family: var(--font-data), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--line) 50%, var(--surface-2) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.map-state {
+  transition: opacity 0.2s ease, stroke-width 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+/* Estados do mapa: sem o anel retangular do navegador; foco de teclado vira contorno no próprio estado. */
+.map-state:focus {
+  outline: none;
+}
+.map-state:focus-visible {
+  stroke: var(--focus);
+  stroke-width: 3px;
+}

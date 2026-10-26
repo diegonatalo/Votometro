@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "apuracao", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3000 },
+    { "name": "estatico", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "3055", "-d", "out"], "port": 3055 }
+  ]
+}

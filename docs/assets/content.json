@@ -1,0 +1,195 @@
+{
+  "name": "Votômetro",
+  "repo": "Votometro",
+  "owner": "diegonatalo",
+  "year": 2026,
+  "tagline": "O resultado do 2º turno de 2026, direto da fonte.",
+  "demo_url": "https://votometrobr.vercel.app",
+  "code_url": "https://github.com/diegonatalo/Votometro",
+  "badge_lines": [
+    "[![Abrir o app](https://img.shields.io/badge/abrir_o_app-votometrobr.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://votometrobr.vercel.app)",
+    "![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)",
+    "![React](https://img.shields.io/badge/React_19-20232a?style=flat-square&logo=react&logoColor=61dafb)",
+    "![TypeScript](https://img.shields.io/badge/TypeScript_5.9-3178c6?style=flat-square&logo=typescript&logoColor=white)",
+    "![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white)",
+    "![Dados](https://img.shields.io/badge/dados-oficiais_do_TSE-10b981?style=flat-square)"
+  ],
+  "about_md": "**O resultado do 2º turno de 2026, direto da fonte.**<br />\nMapa por estado e município, comparação com o 1º turno, voto no exterior e fonte e horário em cada número.",
+  "demo": {
+    "main_alt": "Tela inicial com Lula e Flávio Bolsonaro lado a lado, com foto, partido, percentual e total de votos",
+    "main_caption": "Capturas com os dados reais do TSE (referência 25/10/2026 23:27:02).",
+    "shots": [
+      {
+        "src": "docs/screenshots/mapa-estado.png",
+        "alt": "Mapa com a Bahia selecionada, mostrando os municípios coloridos por candidato e o painel com os totais do estado",
+        "caption": "<b>Estado</b>: municípios coloridos pelo candidato à frente e painel com os totais."
+      },
+      {
+        "src": "docs/screenshots/regioes.png",
+        "alt": "Cinco cartões, um por região, com percentuais de Lula e Flávio Bolsonaro e a diferença em votos",
+        "caption": "<b>Regiões</b>: percentuais, diferença em votos e estados vencidos."
+      },
+      {
+        "src": "docs/screenshots/turnos.png",
+        "alt": "Tabelas comparando o 1º e o 2º turno no Brasil e no exterior, com variação em votos e em percentual",
+        "caption": "<b>Turnos</b>: 1º e 2º turno lado a lado, com a variação de cada linha."
+      },
+      {
+        "src": "docs/screenshots/mobile.png",
+        "alt": "Versão para celular com os cartões dos dois candidatos empilhados",
+        "caption": "<b>Celular</b>: o layout empilha os candidatos e o mapa ocupa a largura da tela."
+      }
+    ]
+  },
+  "features": [
+    {
+      "title": "Mapa interativo",
+      "desc": "Veja quem ficou à frente em cada estado, com tooltip e legenda. Dê zoom e arraste, ou use as setas do teclado."
+    },
+    {
+      "title": "Estado e municípios",
+      "desc": "Clique num estado para aproximar e listar os municípios dele, com filtro e ordenação."
+    },
+    {
+      "title": "Busca de município",
+      "desc": "Digite o nome e escolha na lista com autocomplete, inclusive pelo teclado."
+    },
+    {
+      "title": "Resumo por região",
+      "desc": "Compare Norte, Nordeste, Centro-Oeste, Sudeste e Sul: percentuais, diferença em votos e quantos estados cada lado venceu."
+    },
+    {
+      "title": "Entre os turnos",
+      "desc": "Veja a variação de cada candidato do 1º para o 2º turno, no Brasil e no exterior, sempre com sinal (+ ou −)."
+    },
+    {
+      "title": "Todos os estados",
+      "desc": "Tabela que você pode ordenar e filtrar por região, como alternativa acessível ao mapa."
+    },
+    {
+      "title": "Seções após as 17h",
+      "desc": "Mede o resultado das seções que encerraram depois do horário regular. Nunca estima nada (veja abaixo)."
+    },
+    {
+      "title": "Claro e escuro",
+      "desc": "Segue o tema do seu sistema e deixa trocar com um clique."
+    }
+  ],
+  "stack": [
+    {
+      "t": "Next.js 15",
+      "src": "README (badge)"
+    },
+    {
+      "t": "React 19",
+      "src": "README (badge)"
+    },
+    {
+      "t": "TypeScript 5.9",
+      "src": "README (badge)"
+    },
+    {
+      "t": "Tailwind CSS 4",
+      "src": "README (badge)"
+    },
+    {
+      "t": "d3-geo",
+      "src": "package.json"
+    },
+    {
+      "t": "d3-zoom",
+      "src": "package.json"
+    },
+    {
+      "t": "d3-scale",
+      "src": "package.json"
+    },
+    {
+      "t": "d3-interpolate",
+      "src": "package.json"
+    },
+    {
+      "t": "d3-quadtree",
+      "src": "package.json"
+    },
+    {
+      "t": "d3-selection",
+      "src": "package.json"
+    },
+    {
+      "t": "topojson-client",
+      "src": "package.json"
+    },
+    {
+      "t": "topojson-server",
+      "src": "package.json"
+    },
+    {
+      "t": "topojson-simplify",
+      "src": "package.json"
+    },
+    {
+      "t": "next-themes",
+      "src": "package.json"
+    },
+    {
+      "t": "unzipper",
+      "src": "package.json"
+    },
+    {
+      "t": "tsx",
+      "src": "package.json (dev)"
+    }
+  ],
+  "run": {
+    "title": "Rodando localmente",
+    "md": "Requer [Node.js](https://nodejs.org) e npm.\n\n```bash\nnpm install\nnpm run build-data   # baixa TSE + IBGE, gera public/data e valida os totais (leva alguns minutos)\nnpm run dev          # http://localhost:3000\n```\n\nOs arquivos de `public/data` já estão no projeto, então você pode pular o `build-data` se só quiser ver o site.\n\n| Comando | O que faz |\n| --- | --- |\n| `npm run dev` | Servidor de desenvolvimento em `localhost:3000` |\n| `npm run build` | Valida os totais e gera o site estático em `out/` (falha se os números não baterem) |\n| `npm run build-data` | Baixa os dados do TSE e do IBGE e regenera `public/data` |\n| `npm run validate` | Roda só a validação sobre os JSON já gerados |\n| `npm run overtime` | Procura os Boletins de Urna do 2º turno e regenera o painel das 17h |\n| `npm run typecheck` | Checa os tipos com o TypeScript |\n\n> [!NOTE]\n> Não rode `npm run build` com o servidor de desenvolvimento ligado. Os dois usam a pasta `.next` e o\n> servidor quebra. Se acontecer, pare o servidor, apague `.next` e inicie de novo.\n\nO TSE responde `429` quando recebe pedidos demais. O script espaça as requisições, pausa sozinho e guarda\ncada resposta em `.cache/tse`. Apague essa pasta (`rm -rf .cache`) para forçar um novo download.",
+    "env_title": "🔑 Variáveis de ambiente",
+    "env_md": "| Variável | Para que serve | Se não definir |\n| --- | --- | --- |\n| `NEXT_PUBLIC_SITE_URL` | URL pública do site. Alimenta o canonical, o Open Graph, o `robots.txt` e o `sitemap.xml`. | Usa `https://votometrobr.vercel.app`. |\n\nSó precisa definir se publicar em outro domínio:\n\n```bash\nNEXT_PUBLIC_SITE_URL=https://seu-dominio.com.br npm run build\n```"
+  },
+  "structure": {
+    "title": "Estrutura",
+    "md": "```text\nscripts/            build-data · build-geo · build-overtime · validate · lib/tse\npublic/\n├── data/           JSON gerados (nacional, estados, municípios, 17h) e geo/ com os TopoJSON\n└── img/            fotos dos candidatos\nsrc/\n├── app/            página, layout, favicon, imagem Open Graph, robots e sitemap\n├── components/     Hero, seções, tabela de estados, tema, seletor de candidato\n│   └── map/        BrazilMap (SVG + Canvas), legenda, tooltip, painel e busca\n└── lib/            tipos, formatação, estatísticas, cores, geometria, validação, site\ndocs/               banner e capturas de tela deste README\n```"
+  },
+  "more": [
+    {
+      "title": "🧠 Como funciona",
+      "md": "| Conceito | Regra |\n| --- | --- |\n| **Dados** | Tudo que aparece na tela sai de `public/data/*.json`, gerado por `npm run build-data`. Nenhum número é digitado à mão. |\n| **Percentuais** | Calculados sobre os votos válidos (sem brancos e nulos), com os dois candidatos no mesmo formato. |\n| **Cor do mapa** | Vermelho para Lula à frente, azul para Flávio Bolsonaro à frente. Cinza em 50%. A intensidade cresce até 30 pontos de diferença. |\n| **Validação** | O build falha se estados + exterior ≠ total nacional, se os totais fugirem dos valores de referência ou se as contas de comparecimento e abstenção não fecharem. |\n| **Fonte e horário** | Cada seção mostra “Fonte: TSE”, o arquivo de origem e a data/hora de referência do arquivo. |\n| **Seções após as 17h** | O Boletim de Urna traz a hora de abertura e de encerramento de cada seção, mas não a hora de cada voto. Por isso o painel mede as **seções** que encerraram mais de 15 minutos depois das 17h (Brasília), nunca “votos depois das 17h”. |\n\n> [!NOTE]\n> Os Boletins de Urna do 2º turno ainda não estavam publicados quando os dados foram gerados. Enquanto isso,\n> o painel mostra “indisponível” e explica o motivo, sem números. Rode `npm run build-data` de novo quando o\n> TSE publicar. O cálculo foi testado com os boletins do 1º turno (Acre)."
+    },
+    {
+      "title": "📚 Sobre os dados",
+      "md": "| Dado | Fonte |\n| --- | --- |\n| Resultados por Brasil, UF, exterior e município (1º e 2º turno) | API de resultados do TSE, `resultados.tse.jus.br/oficial/ele2026` (`6258` = 2º turno, `6257` = 1º turno) |\n| Fotos dos candidatos | Arquivos de fotos do TSE, copiados para `public/img/candidatos/` |\n| Geometrias | API de malhas do IBGE, simplificadas em `scripts/build-geo.ts` |\n| Horário de encerramento das seções | Boletim de Urna, dados abertos do TSE |\n\nLimitações conhecidas:\n\n- A abstenção no arquivo do TSE é 19,22%. A imprensa cita entre 19% e 19,2%. A diferença está em “Notas”, na própria página.\n- O município de Boa Esperança do Norte (MT) tem resultado, mas não tem polígono na malha do IBGE. Ele entra nos totais e na busca, não no desenho.\n- O exterior é um território à parte e não aparece no mapa.\n- A API do TSE não é documentada formalmente, então o caminho dos arquivos pode mudar.\n- O corte de 15 minutos é um critério de medição, não uma definição legal de prorrogação."
+    },
+    {
+      "title": null,
+      "md": "<details><summary><b>Como o mapa carrega os municípios</b></summary>\n\n1. O mapa do Brasil desenha só os 27 estados (SVG), leve e imediato.\n2. Ao clicar num estado, o arquivo `municipios-XX.json` e a malha `municipios-XX.topo.json` dele são baixados sob demanda.\n3. Os municípios são desenhados em Canvas, com índice em grade e `isPointInPath` para saber qual está sob o mouse.\n4. Durante zoom e arraste, o Canvas reaproveita uma imagem pronta do desenho e só redesenha ao parar.\n5. A lista de busca usa um arquivo único leve (`municipios.json`), carregado quando você foca o campo.\n\n</details>"
+    },
+    {
+      "title": "🌐 Deploy",
+      "md": "O site é exportado como HTML estático (`output: \"export\"` em `next.config.mjs`), então funciona em Vercel,\nNetlify, GitHub Pages ou qualquer hospedagem de arquivos. Publique a pasta `out/`.\n\n- O site está no ar em [votometrobr.vercel.app](https://votometrobr.vercel.app). Esse é o endereço padrão do Open Graph, do canonical e do sitemap; em outro domínio, defina `NEXT_PUBLIC_SITE_URL` no build.\n- A imagem de compartilhamento (`opengraph-image`), o `twitter-image` e o `apple-icon` saem sem extensão. O `vercel.json` força\n  `Content-Type: image/png` neles; em outra hospedagem, faça o equivalente.\n- Se os dados mudarem, rode o build de novo: a imagem de compartilhamento usa os números do momento."
+    },
+    {
+      "title": "🧭 Próximos passos",
+      "md": "- [ ] Publicar o painel “Após as 17h” com números assim que o TSE liberar os Boletins de Urna do 2º turno.\n- [ ] Adicionar testes automatizados (hoje a garantia é a validação dos totais no build).\n- [ ] Medir o desempenho do mapa em celulares reais (os testes foram feitos em navegador headless).\n- [ ] Conferir o preview de compartilhamento no site publicado (WhatsApp, X, LinkedIn).\n- [ ] Atualizar os dados sozinho com um agendamento, em vez de rodar `build-data` à mão."
+    },
+    {
+      "title": "Créditos",
+      "md": "- Dados de votação, fotos dos candidatos e Boletins de Urna: [TSE](https://www.tse.jus.br).\n- Malhas de estados e municípios: [IBGE](https://servicodados.ibge.gov.br/api/docs/malhas).\n- Mapa: [d3-geo](https://d3js.org/d3-geo), [d3-zoom](https://d3js.org/d3-zoom) e [TopoJSON](https://github.com/topojson/topojson).\n- Fontes: Bricolage Grotesque, Instrument Sans e JetBrains Mono, via Google Fonts."
+    }
+  ],
+  "closing": "Feito com 💚 para quem quer conferir a apuração direto da fonte.",
+  "author": [
+    {
+      "t": "Portfólio",
+      "u": "https://diegonatalo.dev"
+    },
+    {
+      "t": "LinkedIn",
+      "u": "https://www.linkedin.com/in/diegonatalo/"
+    },
+    {
+      "t": "GitHub",
+      "u": "https://github.com/diegonatalo"
+    }
+  ]
+}

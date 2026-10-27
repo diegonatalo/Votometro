@@ -1,13 +1,17 @@
 <div align="center">
 
-<img src="docs/img/banner.png" alt="Votômetro: Presidente, 2º turno, com os percentuais de votos válidos de Lula e Flávio Bolsonaro" width="720" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.svg" />
+  <img src="docs/assets/banner-light.svg" alt="Votômetro: O resultado do 2º turno de 2026, direto da fonte." width="100%" />
+</picture>
 
-# Votômetro
-
-**O resultado do 2º turno de 2026, direto da fonte.**<br />
-Mapa por estado e município, comparação com o 1º turno, voto no exterior e fonte e horário em cada número.
-
-<br />
+<a href="https://votometrobr.vercel.app"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/btn-demo-dark.svg" />
+  <img src="docs/assets/btn-demo-light.svg" alt="Demonstração ↗" height="46" />
+</picture></a>&nbsp;&nbsp;<a href="https://github.com/diegonatalo/Votometro"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/btn-codigo-dark.svg" />
+  <img src="docs/assets/btn-codigo-light.svg" alt="Código ↗" height="46" />
+</picture></a>
 
 [![Abrir o app](https://img.shields.io/badge/abrir_o_app-votometrobr.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://votometrobr.vercel.app)
 
@@ -17,79 +21,143 @@ Mapa por estado e município, comparação com o 1º turno, voto no exterior e f
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Dados](https://img.shields.io/badge/dados-oficiais_do_TSE-10b981?style=flat-square)
 
-<br />
+</div>
+
+<div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/principal-dark.png" />
-  <img src="docs/screenshots/principal-light.png" alt="Tela inicial com Lula e Flávio Bolsonaro lado a lado, com foto, partido, percentual e total de votos" width="860" />
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/h-sobre-dark.svg" />
+  <img src="docs/assets/h-sobre-light.svg" alt="01 · SOBRE: Sobre o projeto" width="100%" />
+</picture>
+
+</div>
+
+**O resultado do 2º turno de 2026, direto da fonte.**<br />
+Mapa por estado e município, comparação com o 1º turno, voto no exterior e fonte e horário em cada número.
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/h-demo-dark.svg" />
+  <img src="docs/assets/h-demo-light.svg" alt="02 · DEMO: Telas" width="100%" />
+</picture>
+
+</div>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/shot-principal-dark.svg" />
+  <img src="docs/assets/shot-principal-light.svg" alt="Tela inicial com Lula e Flávio Bolsonaro lado a lado, com foto, partido, percentual e total de votos" width="100%" />
 </picture>
 
 <sub>Capturas com os dados reais do TSE (referência 25/10/2026 23:27:02).</sub>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/shot-01-dark.svg" />
+  <img src="docs/assets/shot-01-light.svg" alt="Mapa com a Bahia selecionada, mostrando os municípios coloridos por candidato e o painel com os totais do estado" width="100%" />
+</picture>
+
+<sub><b>Estado</b>: municípios coloridos pelo candidato à frente e painel com os totais.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/shot-02-dark.svg" />
+  <img src="docs/assets/shot-02-light.svg" alt="Cinco cartões, um por região, com percentuais de Lula e Flávio Bolsonaro e a diferença em votos" width="100%" />
+</picture>
+
+<sub><b>Regiões</b>: percentuais, diferença em votos e estados vencidos.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/shot-03-dark.svg" />
+  <img src="docs/assets/shot-03-light.svg" alt="Tabelas comparando o 1º e o 2º turno no Brasil e no exterior, com variação em votos e em percentual" width="100%" />
+</picture>
+
+<sub><b>Turnos</b>: 1º e 2º turno lado a lado, com a variação de cada linha.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/shot-04-dark.svg" />
+  <img src="docs/assets/shot-04-light.svg" alt="Versão para celular com os cartões dos dois candidatos empilhados" width="100%" />
+</picture>
+
+<sub><b>Celular</b>: o layout empilha os candidatos e o mapa ocupa a largura da tela.</sub>
+
 </div>
 
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/h-funcionalidades-dark.svg" />
+  <img src="docs/assets/h-funcionalidades-light.svg" alt="03 · FUNCIONALIDADES: O que dá para fazer" width="100%" />
+</picture>
+
+</div>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/f-01-dark.svg" />
+  <img src="docs/assets/f-01-light.svg" alt="Mapa interativo: Veja quem ficou à frente em cada estado, com tooltip e legenda. Dê zoom e arraste, ou use as setas do teclado." width="49%" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/f-02-dark.svg" />
+  <img src="docs/assets/f-02-light.svg" alt="Estado e municípios: Clique num estado para aproximar e listar os municípios dele, com filtro e ordenação." width="49%" />
+</picture>
 <br />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/f-03-dark.svg" />
+  <img src="docs/assets/f-03-light.svg" alt="Busca de município: Digite o nome e escolha na lista com autocomplete, inclusive pelo teclado." width="49%" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/f-04-dark.svg" />
+  <img src="docs/assets/f-04-light.svg" alt="Resumo por região: Compare Norte, Nordeste, Centro-Oeste, Sudeste e Sul: percentuais, diferença em votos e quantos estados cada lado venceu." width="49%" />
+</picture>
+<br />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/f-05-dark.svg" />
+  <img src="docs/assets/f-05-light.svg" alt="Entre os turnos: Veja a variação de cada candidato do 1º para o 2º turno, no Brasil e no exterior, sempre com sinal (+ ou −)." width="49%" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/f-06-dark.svg" />
+  <img src="docs/assets/f-06-light.svg" alt="Todos os estados: Tabela que você pode ordenar e filtrar por região, como alternativa acessível ao mapa." width="49%" />
+</picture>
+<br />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/f-07-dark.svg" />
+  <img src="docs/assets/f-07-light.svg" alt="Seções após as 17h: Mede o resultado das seções que encerraram depois do horário regular. Nunca estima nada (veja abaixo)." width="49%" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/f-08-dark.svg" />
+  <img src="docs/assets/f-08-light.svg" alt="Claro e escuro: Segue o tema do seu sistema e deixa trocar com um clique." width="49%" />
+</picture>
 
-## ✨ O que dá para fazer
+</div>
 
-| Recurso | Descrição |
-| --- | --- |
-| **Mapa interativo** | Veja quem ficou à frente em cada estado, com tooltip e legenda. Dê zoom e arraste, ou use as setas do teclado. |
-| **Estado e municípios** | Clique num estado para aproximar e listar os municípios dele, com filtro e ordenação. |
-| **Busca de município** | Digite o nome e escolha na lista com autocomplete, inclusive pelo teclado. |
-| **Resumo por região** | Compare Norte, Nordeste, Centro-Oeste, Sudeste e Sul: percentuais, diferença em votos e quantos estados cada lado venceu. |
-| **Entre os turnos** | Veja a variação de cada candidato do 1º para o 2º turno, no Brasil e no exterior, sempre com sinal (+ ou −). |
-| **Todos os estados** | Tabela que você pode ordenar e filtrar por região, como alternativa acessível ao mapa. |
-| **Seções após as 17h** | Mede o resultado das seções que encerraram depois do horário regular. Nunca estima nada (veja abaixo). |
-| **Claro e escuro** | Segue o tema do seu sistema e deixa trocar com um clique. |
+<div align="center">
 
-## 🖼️ Telas
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/h-stack-dark.svg" />
+  <img src="docs/assets/h-stack-light.svg" alt="04 · STACK: Stack" width="100%" />
+</picture>
 
-<table>
-  <tr>
-    <td width="50%"><img src="docs/screenshots/mapa-estado.png" alt="Mapa com a Bahia selecionada, mostrando os municípios coloridos por candidato e o painel com os totais do estado" /><br /><sub><b>Estado</b>: municípios coloridos pelo candidato à frente e painel com os totais.</sub></td>
-    <td width="50%"><img src="docs/screenshots/regioes.png" alt="Cinco cartões, um por região, com percentuais de Lula e Flávio Bolsonaro e a diferença em votos" /><br /><sub><b>Regiões</b>: percentuais, diferença em votos e estados vencidos.</sub></td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="docs/screenshots/turnos.png" alt="Tabelas comparando o 1º e o 2º turno no Brasil e no exterior, com variação em votos e em percentual" /><br /><sub><b>Turnos</b>: 1º e 2º turno lado a lado, com a variação de cada linha.</sub></td>
-    <td width="50%"><img src="docs/screenshots/mobile.png" alt="Versão para celular com os cartões dos dois candidatos empilhados" width="240" /><br /><sub><b>Celular</b>: o layout empilha os candidatos e o mapa ocupa a largura da tela.</sub></td>
-  </tr>
-</table>
+</div>
 
-## 🧠 Como funciona
+<div align="center">
 
-| Conceito | Regra |
-| --- | --- |
-| **Dados** | Tudo que aparece na tela sai de `public/data/*.json`, gerado por `npm run build-data`. Nenhum número é digitado à mão. |
-| **Percentuais** | Calculados sobre os votos válidos (sem brancos e nulos), com os dois candidatos no mesmo formato. |
-| **Cor do mapa** | Vermelho para Lula à frente, azul para Flávio Bolsonaro à frente. Cinza em 50%. A intensidade cresce até 30 pontos de diferença. |
-| **Validação** | O build falha se estados + exterior ≠ total nacional, se os totais fugirem dos valores de referência ou se as contas de comparecimento e abstenção não fecharem. |
-| **Fonte e horário** | Cada seção mostra “Fonte: TSE”, o arquivo de origem e a data/hora de referência do arquivo. |
-| **Seções após as 17h** | O Boletim de Urna traz a hora de abertura e de encerramento de cada seção, mas não a hora de cada voto. Por isso o painel mede as **seções** que encerraram mais de 15 minutos depois das 17h (Brasília), nunca “votos depois das 17h”. |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/stack-dark.svg" />
+  <img src="docs/assets/stack-light.svg" alt="Stack: Next.js 15, React 19, TypeScript 5.9, Tailwind CSS 4, d3-geo, d3-zoom, d3-scale, d3-interpolate, d3-quadtree, d3-selection, topojson-client, topojson-server, topojson-simplify, next-themes, unzipper, tsx" width="100%" />
+</picture>
 
-> [!NOTE]
-> Os Boletins de Urna do 2º turno ainda não estavam publicados quando os dados foram gerados. Enquanto isso,
-> o painel mostra “indisponível” e explica o motivo, sem números. Rode `npm run build-data` de novo quando o
-> TSE publicar. O cálculo foi testado com os boletins do 1º turno (Acre).
+</div>
 
-## 📚 Sobre os dados
+<div align="center">
 
-| Dado | Fonte |
-| --- | --- |
-| Resultados por Brasil, UF, exterior e município (1º e 2º turno) | API de resultados do TSE, `resultados.tse.jus.br/oficial/ele2026` (`6258` = 2º turno, `6257` = 1º turno) |
-| Fotos dos candidatos | Arquivos de fotos do TSE, copiados para `public/img/candidatos/` |
-| Geometrias | API de malhas do IBGE, simplificadas em `scripts/build-geo.ts` |
-| Horário de encerramento das seções | Boletim de Urna, dados abertos do TSE |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/h-como-rodar-dark.svg" />
+  <img src="docs/assets/h-como-rodar-light.svg" alt="05 · COMO RODAR: Rodando localmente" width="100%" />
+</picture>
 
-Limitações conhecidas:
-
-- A abstenção no arquivo do TSE é 19,22%. A imprensa cita entre 19% e 19,2%. A diferença está em “Notas”, na própria página.
-- O município de Boa Esperança do Norte (MT) tem resultado, mas não tem polígono na malha do IBGE. Ele entra nos totais e na busca, não no desenho.
-- O exterior é um território à parte e não aparece no mapa.
-- A API do TSE não é documentada formalmente, então o caminho dos arquivos pode mudar.
-- O corte de 15 minutos é um critério de medição, não uma definição legal de prorrogação.
-
-## 🚀 Rodando localmente
+</div>
 
 Requer [Node.js](https://nodejs.org) e npm.
 
@@ -117,7 +185,7 @@ Os arquivos de `public/data` já estão no projeto, então você pode pular o `b
 O TSE responde `429` quando recebe pedidos demais. O script espaça as requisições, pausa sozinho e guarda
 cada resposta em `.cache/tse`. Apague essa pasta (`rm -rf .cache`) para forçar um novo download.
 
-## 🔑 Variáveis de ambiente
+### 🔑 Variáveis de ambiente
 
 | Variável | Para que serve | Se não definir |
 | --- | --- | --- |
@@ -129,7 +197,14 @@ Só precisa definir se publicar em outro domínio:
 NEXT_PUBLIC_SITE_URL=https://seu-dominio.com.br npm run build
 ```
 
-## 🗂️ Estrutura
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/h-estrutura-dark.svg" />
+  <img src="docs/assets/h-estrutura-light.svg" alt="06 · ESTRUTURA: Estrutura" width="100%" />
+</picture>
+
+</div>
 
 ```text
 scripts/            build-data · build-geo · build-overtime · validate · lib/tse
@@ -144,8 +219,49 @@ src/
 docs/               banner e capturas de tela deste README
 ```
 
-<details>
-<summary><b>Como o mapa carrega os municípios</b></summary>
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/h-mais-dark.svg" />
+  <img src="docs/assets/h-mais-light.svg" alt="07 · MAIS: Mais informações" width="100%" />
+</picture>
+
+</div>
+
+### 🧠 Como funciona
+
+| Conceito | Regra |
+| --- | --- |
+| **Dados** | Tudo que aparece na tela sai de `public/data/*.json`, gerado por `npm run build-data`. Nenhum número é digitado à mão. |
+| **Percentuais** | Calculados sobre os votos válidos (sem brancos e nulos), com os dois candidatos no mesmo formato. |
+| **Cor do mapa** | Vermelho para Lula à frente, azul para Flávio Bolsonaro à frente. Cinza em 50%. A intensidade cresce até 30 pontos de diferença. |
+| **Validação** | O build falha se estados + exterior ≠ total nacional, se os totais fugirem dos valores de referência ou se as contas de comparecimento e abstenção não fecharem. |
+| **Fonte e horário** | Cada seção mostra “Fonte: TSE”, o arquivo de origem e a data/hora de referência do arquivo. |
+| **Seções após as 17h** | O Boletim de Urna traz a hora de abertura e de encerramento de cada seção, mas não a hora de cada voto. Por isso o painel mede as **seções** que encerraram mais de 15 minutos depois das 17h (Brasília), nunca “votos depois das 17h”. |
+
+> [!NOTE]
+> Os Boletins de Urna do 2º turno ainda não estavam publicados quando os dados foram gerados. Enquanto isso,
+> o painel mostra “indisponível” e explica o motivo, sem números. Rode `npm run build-data` de novo quando o
+> TSE publicar. O cálculo foi testado com os boletins do 1º turno (Acre).
+
+### 📚 Sobre os dados
+
+| Dado | Fonte |
+| --- | --- |
+| Resultados por Brasil, UF, exterior e município (1º e 2º turno) | API de resultados do TSE, `resultados.tse.jus.br/oficial/ele2026` (`6258` = 2º turno, `6257` = 1º turno) |
+| Fotos dos candidatos | Arquivos de fotos do TSE, copiados para `public/img/candidatos/` |
+| Geometrias | API de malhas do IBGE, simplificadas em `scripts/build-geo.ts` |
+| Horário de encerramento das seções | Boletim de Urna, dados abertos do TSE |
+
+Limitações conhecidas:
+
+- A abstenção no arquivo do TSE é 19,22%. A imprensa cita entre 19% e 19,2%. A diferença está em “Notas”, na própria página.
+- O município de Boa Esperança do Norte (MT) tem resultado, mas não tem polígono na malha do IBGE. Ele entra nos totais e na busca, não no desenho.
+- O exterior é um território à parte e não aparece no mapa.
+- A API do TSE não é documentada formalmente, então o caminho dos arquivos pode mudar.
+- O corte de 15 minutos é um critério de medição, não uma definição legal de prorrogação.
+
+<details><summary><b>Como o mapa carrega os municípios</b></summary>
 
 1. O mapa do Brasil desenha só os 27 estados (SVG), leve e imediato.
 2. Ao clicar num estado, o arquivo `municipios-XX.json` e a malha `municipios-XX.topo.json` dele são baixados sob demanda.
@@ -155,7 +271,7 @@ docs/               banner e capturas de tela deste README
 
 </details>
 
-## 🌐 Deploy
+### 🌐 Deploy
 
 O site é exportado como HTML estático (`output: "export"` em `next.config.mjs`), então funciona em Vercel,
 Netlify, GitHub Pages ou qualquer hospedagem de arquivos. Publique a pasta `out/`.
@@ -165,7 +281,7 @@ Netlify, GitHub Pages ou qualquer hospedagem de arquivos. Publique a pasta `out/
   `Content-Type: image/png` neles; em outra hospedagem, faça o equivalente.
 - Se os dados mudarem, rode o build de novo: a imagem de compartilhamento usa os números do momento.
 
-## 🧭 Próximos passos
+### 🧭 Próximos passos
 
 - [ ] Publicar o painel “Após as 17h” com números assim que o TSE liberar os Boletins de Urna do 2º turno.
 - [ ] Adicionar testes automatizados (hoje a garantia é a validação dos totais no build).
@@ -173,15 +289,44 @@ Netlify, GitHub Pages ou qualquer hospedagem de arquivos. Publique a pasta `out/
 - [ ] Conferir o preview de compartilhamento no site publicado (WhatsApp, X, LinkedIn).
 - [ ] Atualizar os dados sozinho com um agendamento, em vez de rodar `build-data` à mão.
 
-## Créditos
+### Créditos
 
 - Dados de votação, fotos dos candidatos e Boletins de Urna: [TSE](https://www.tse.jus.br).
 - Malhas de estados e municípios: [IBGE](https://servicodados.ibge.gov.br/api/docs/malhas).
 - Mapa: [d3-geo](https://d3js.org/d3-geo), [d3-zoom](https://d3js.org/d3-zoom) e [TopoJSON](https://github.com/topojson/topojson).
 - Fontes: Bricolage Grotesque, Instrument Sans e JetBrains Mono, via Google Fonts.
 
-<br />
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/h-autor-dark.svg" />
+  <img src="docs/assets/h-autor-light.svg" alt="08 · AUTOR: Autor" width="100%" />
+</picture>
+
+</div>
 
 <div align="center">
-  <sub>Feito com 💚 para quem quer conferir a apuração direto da fonte.</sub>
+
+<a href="https://diegonatalo.dev"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/btn-portfolio-dark.svg" />
+  <img src="docs/assets/btn-portfolio-light.svg" alt="Portfólio ↗" height="46" />
+</picture></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/diegonatalo/"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/btn-linkedin-dark.svg" />
+  <img src="docs/assets/btn-linkedin-light.svg" alt="LinkedIn ↗" height="46" />
+</picture></a>&nbsp;&nbsp;<a href="https://github.com/diegonatalo"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/btn-github-dark.svg" />
+  <img src="docs/assets/btn-github-light.svg" alt="GitHub ↗" height="46" />
+</picture></a>
+
+</div>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/footer-dark.svg" />
+  <img src="docs/assets/footer-light.svg" alt="© 2026 Diego Natalo" width="100%" />
+</picture>
+
+<sub>Feito com 💚 para quem quer conferir a apuração direto da fonte.</sub>
+
 </div>

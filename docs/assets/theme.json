@@ -1,0 +1,20 @@
+{
+  "dark": {
+    "bg": "#0a0d13", "card": "#121721", "border": "#263042", "borderStrong": "#33405a",
+    "fg": "#eef1f6", "muted": "#b0b9c8", "subtle": "#8c97a9",
+    "accent": "#6ee7a8", "accent2": "#7fb0ff", "onAccent": "#0a0d13",
+    "fontSans": "'Instrument Sans','Bricolage Grotesque','Segoe UI',-apple-system,Helvetica,Arial,sans-serif",
+    "fontDisplay": "'Bricolage Grotesque','Instrument Sans','Segoe UI',-apple-system,Helvetica,Arial,sans-serif",
+    "fontMono": "'JetBrains Mono',Menlo,Consolas,monospace",
+    "radiusScale": 1.0, "glow": true, "grid": true, "animations": true
+  },
+  "light": {
+    "bg": "#f1efe8", "card": "#fbfaf6", "border": "#d9d6cb", "borderStrong": "#c4c0b2",
+    "fg": "#14171a", "muted": "#3d4247", "subtle": "#5a6065",
+    "accent": "#1d6a3a", "accent2": "#1b4c99", "onAccent": "#fbfaf6",
+    "fontSans": "'Instrument Sans','Bricolage Grotesque','Segoe UI',-apple-system,Helvetica,Arial,sans-serif",
+    "fontDisplay": "'Bricolage Grotesque','Instrument Sans','Segoe UI',-apple-system,Helvetica,Arial,sans-serif",
+    "fontMono": "'JetBrains Mono',Menlo,Consolas,monospace",
+    "radiusScale": 1.0, "glow": true, "grid": true, "animations": true
+  }
+}
